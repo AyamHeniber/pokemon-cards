@@ -1,5 +1,7 @@
+'@typescript-eslint/no-explicit-any'
 import axios from "axios";
 import { GetServerSideProps } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
@@ -13,7 +15,7 @@ const PokemonDetail = ({ pokemon }: { pokemon: any }) => {
       <div className="max-w-5xl mx-auto bg-gray-900 text-white rounded-xl shadow-xl p-6 transform transition-all duration-300">
         <div className="flex justify-center items-center flex-col md:flex-row space-y-8 md:space-y-0">
           <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 flex justify-center items-center mb-6 md:mb-0">
-            <img
+            <Image
               src={pokemon.sprites.front_default}
               alt={pokemon.name}
               className="rounded-full shadow-xl border-4 border-yellow-400 p-2 transform transition-all duration-300 hover:scale-105"
