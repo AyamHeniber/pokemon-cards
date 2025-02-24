@@ -18,4 +18,22 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0b3707;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FED992;
+  border-radius: 10px;
 }
