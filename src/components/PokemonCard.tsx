@@ -16,6 +16,8 @@ const PokemonCard = ({ name, id }: PokemonCardProps) => {
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
             alt={name}
             className="w-32 h-32 mx-auto group-hover:scale-110 transition-transform duration-300"
+            width={20}
+            height={20}
           />
           <div className="absolute top-0 left-0 right-0 bottom-0  opacity-0 group-hover:opacity-60 rounded-xl transition-all"></div>
         </div>

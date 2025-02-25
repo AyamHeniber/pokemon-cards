@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import PokemonCard from "@/components/PokemonCard";
-import Head from "next/head";
 
 export async function getServerSideProps() {
   const response = await axios.get("https://pokeapi.co/api/v2/pokemon");
